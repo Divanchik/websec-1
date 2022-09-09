@@ -1,0 +1,48 @@
+#mainBlock {
+    background: #b5ffc5;
+    border-radius: 15px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.Style1 {
+    background: #b5ffc5;
+    color: #ff001d;
+    border: 1px dashed #ff001d;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.Input {
+    width: 150px;
+    height: 20px;
+}
+
+.Button {
+    color: lime;
+    background: black;
+    border: 2px dashed lime;
+    border-radius: 20px;
+    padding: 2px;
+    width: 100px;
+}
+
+.Button:hover {
+    border: 1px solid #ff001d;
+}
+
+.Text {
+    color: #ff001d;
+    text-align: center;
+}
+
+#text1 {
+    opacity: 0.4;
+}
+
+#text2 {
+    opacity: 0.6;
+}
