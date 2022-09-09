@@ -4,30 +4,28 @@
     position: absolute;
     left: 20px;
     top: 20px;
-    max-width: 400px;
-    max-height: 400px;
+    min-width: 200px;
+    max-width: fit-content;
+    max-height: fit-content;
 }
 
 .Style1 {
     background: #b5ffc5;
     color: #ff001d;
     border: 1px dashed #ff001d;
-    border-radius: 15px;
+    border-radius: 10px;
     margin: 5px;
 }
 
 .Input {
     width: 150px;
-    height: 20px;
+    height: 30px;
 }
 
 .Button {
-    color: lime;
-    background: black;
-    border: 2px dashed lime;
-    border-radius: 20px;
-    padding: 2px;
-    width: 100px;
+    display: block;
+    margin: auto;
+    padding: 5px;
 }
 
 .Button:hover {
@@ -37,6 +35,15 @@
 .Text {
     color: #ff001d;
     text-align: center;
+}
+
+#outerText {
+    min-height: 123px;
+}
+
+#select1 {
+    height: 30px;
+    width: 50px;
 }
 
 #text1 {

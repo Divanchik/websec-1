@@ -10,24 +10,33 @@ function Calc() {
     
     if (!val1.match(/^\d+\.*\d*$/) || !val2.match(/^\d+\.*\d*$/))
     {
-        t1.innerText = t2.innerText;
-        t2.innerText = t3.innerText;
-        t3.innerText = "ERROR";
+        result = "ERROR";
     }
     else
     {
         switch (operator) {
             case "plus":
                 result = parseFloat(val1) + parseFloat(val2);
+                result = val1 + " + " + val2 + " = " + result.toPrecision(3);
                 break;
             case "minus":
                 result = parseFloat(val1) - parseFloat(val2);
+                result = val1 + " - " + val2 + " = " + result.toPrecision(3);
+                break;
+            case "multiply":
+                result = parseFloat(val1) * parseFloat(val2);
+                result = val1 + " * " + val2 + " = " + result.toPrecision(3);
+                break;
+            case "divide":
+                result = parseFloat(val1) / parseFloat(val2);
+                result = val1 + " / " + val2 + " = " + result.toPrecision(3);
                 break;
             default:
                 break;
         }
-        t1.innerText = t2.innerText;
-        t2.innerText = t3.innerText;
-        t3.innerText = result.toString();
     }
+    t1.innerText = t2.innerText;
+    t2.innerText = t3.innerText;
+    t3.innerText = result
+    
 }

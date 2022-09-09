@@ -9,13 +9,22 @@
 
 <body>
     <div id="mainBlock">
-        <input id="input1" class="Style1 Input" />
-        <select id="select1" class="Style1">
-            <option value="plus" selected>+</option>
-            <option value="minus">-</option>
-        </select>
-        <input id="input2" class="Style1 Input" />
+        <div>
+            <!-- Первое число -->
+            <input id="input1" class="Style1 Input" />
+            <!-- Выбор операции -->
+            <select id="select1" class="Style1">
+                <option value="plus" selected>+</option>
+                <option value="minus">-</option>
+                <option value="multiply">*</option>
+                <option value="divide">/</option>
+            </select>
+            <!-- Второе число -->
+            <input id="input2" class="Style1 Input" />
+        </div>
+        <!-- Кнопка вычисления -->
         <button id="button1" class="Style1 Button" onclick="Calc()">Вычислить</button>
+        <!-- Вывод -->
         <div id="outerText" class="Style1">
             <p id="text1" class="Text"></p>
             <p id="text2" class="Text"></p>
