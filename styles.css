@@ -14,17 +14,18 @@
     color: #ff001d;
     border: 1px dashed #ff001d;
     border-radius: 10px;
-    margin: 5px;
 }
 
 .Input {
     width: 150px;
     height: 30px;
+    display: block;
+    margin: 5px auto 5px auto;
 }
 
 .Button {
     display: block;
-    margin: auto;
+    margin: 5px auto 5px auto;
     padding: 5px;
 }
 
@@ -44,6 +45,8 @@
 #select1 {
     height: 30px;
     width: 50px;
+    display: block;
+    margin: 5px auto 5px auto;
 }
 
 #text1 {

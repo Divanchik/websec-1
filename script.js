@@ -8,9 +8,17 @@ function Calc() {
     t2 = document.getElementById("text2")
     t3 = document.getElementById("text3")
     
-    if (!val1.match(/^\d+\.*\d*$/) || !val2.match(/^\d+\.*\d*$/))
+    if (!val1.match(/^\d+\.*\d*$/))
     {
-        result = "ERROR";
+        result = "ERROR: invalid first number!";
+    }
+    else if (!val2.match(/^\d+\.*\d*$/))
+    {
+        result = "ERROR: invalid second number!";
+    }
+    else if (operator == "divide" && parseFloat(val2) == 0)
+    {
+        result = "ERROR: division by zero!";
     }
     else
     {
